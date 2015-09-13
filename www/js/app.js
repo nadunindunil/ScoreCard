@@ -26,4 +26,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/',
     templateUrl: 'partials/first.html'
   })
+    .state('scores', {
+      url: '/scores',
+      templateUrl: 'partials/scores.html'
+    })
 });
