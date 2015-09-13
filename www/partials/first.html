@@ -1,0 +1,42 @@
+<ion-view title="Enter New Data">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">First Player</span>
+        <input type="text" ng-model="Fplayer" placeholder="First Player">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Second Player</span>
+        <input type="text" ng-model="Splayer" placeholder="Second Player">
+      </label>
+
+    </div>
+    <div class="row">
+        <div class="col col-33 col-offset-33">
+          <button class="button button-outline button-positive">
+            Submit
+          </button>
+        </div>
+    </div>
+    <div class="list list-inset">
+
+      <label class="item item-radio">
+        <input type="radio" name="group">
+        <div class="item-content">
+          {{Fplayer}}
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+      <label class="item item-radio">
+        <input type="radio" name="group">
+        <div class="item-content">
+          {{Splayer}}
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+
+    </div>
+
+  </ion-content>
+</ion-view>
+
