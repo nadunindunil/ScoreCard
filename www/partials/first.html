@@ -3,11 +3,11 @@
     <div class="list list-inset">
       <label class="item item-input item-floating-label">
         <span class="input-label">First Player</span>
-        <input type="text" ng-model="Fplayer" placeholder="First Player">
+        <input type="text" ng-model="input.Fplayer" placeholder="First Player">
       </label>
       <label class="item item-input item-floating-label">
         <span class="input-label">Second Player</span>
-        <input type="text" ng-model="Splayer" placeholder="Second Player">
+        <input type="text" ng-model="input.Splayer" placeholder="Second Player">
       </label>
 
     </div>
@@ -18,16 +18,16 @@
       <h5> Toss won by,</h5>
 
       <label class="item item-radio">
-        <input type="radio" name="group">
+        <input type="radio" name="group" ng-model="playerSelect" ng-value="p1" >
         <div class="item-content">
-          {{Fplayer}}
+          {{input.Fplayer}}
         </div>
         <i class="radio-icon ion-checkmark"></i>
       </label>
       <label class="item item-radio">
-        <input type="radio" name="group">
+        <input type="radio" name="group" ng-model="playerSelect" ng-value="p2" >
         <div class="item-content">
-          {{Splayer}}
+          {{input.Splayer}}
         </div>
         <i class="radio-icon ion-checkmark"></i>
       </label>
@@ -41,8 +41,8 @@
           sets
         </div>
         <select>
-          <option selected>3</option>
-          <option>5</option>
+          <option selected ng-model="sets" ng-value="3" >3</option>
+          <option ng-model="sets" ng-value="5" >5</option>
         </select>
       </label>
 

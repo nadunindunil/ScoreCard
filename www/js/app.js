@@ -24,10 +24,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state('start', {
     url: '/',
-    templateUrl: 'partials/first.html'
+    templateUrl: 'partials/first.html',
+    controller: 'DataEntryCtrl'
   })
     .state('scores', {
       url: '/scores',
-      templateUrl: 'partials/scores.html'
+      templateUrl: 'partials/scores.html',
+      controller:'ScoreSheetCtrl'
+
     })
 });
