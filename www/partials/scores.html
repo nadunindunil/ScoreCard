@@ -1,16 +1,58 @@
 
 <ion-view title="SCORES">
   <ion-content>
-    {{input.Fplayer}}
+
 
     <div class="row">
-      {{input.Fplayer}}
+
+      <div class="col col-50 text-center">
+        <label class="pull-right"><h1>{{input.Fplayer}}</h1></label>
+      </div>
+
+      <div class="col col-50 text-center">
+        <label class="pull-left"><h1>{{input.Splayer}}</h1></label>
+      </div>
+    </div>
+
+
+    <div class="row">
+
       <div class="col col-50">
-        <label class="pull-left">{{input.Fplayer}} </label>
+
+        <div class="card" style="height: 4cm" ng-click="increment1()">
+          <div class="item item-text-wrap text-center" style="font-size: 110px">
+            </br>
+            </br>
+            {{val1}}
+          </div>
+        </div>
+
+        <div class="col col-33 col-offset-33">
+          <button class="button button-block button-assertive" ng-click="decrement1()">
+            -
+          </button>
+        </div>
+
 
       </div>
 
       <div class="col col-50">
+
+        <div class="card" style="height: 4cm" ng-click="increment2()">
+          <div class="item item-text-wrap text-center" style="font-size: 110px">
+            </br>
+            </br>
+            {{val2}}
+          </div>
+        </div>
+
+        <div class="col col-33 col-offset-33">
+          <button class="button button-block button-assertive" ng-click="decrement2()">
+            -
+          </button>
+        </div>
+
+
 
 
 
@@ -21,4 +63,6 @@
 
   </ion-content>
 </ion-view>
+
+
 

@@ -38,4 +38,31 @@ app.controller('DataEntryCtrl', function($scope,  Authorization) {
 
 app.controller('ScoreSheetCtrl', function($scope, Authorization) {
   $scope.input = Authorization;
+  var v1 = $scope.val1= 0;
+  var v2 = $scope.val2= 0;
+
+  $scope.increment1=function(){
+    //value = value + 1;
+    //v1=v1+1;
+    $scope.val1++;
+
+  };
+  $scope.increment2=function(){
+    $scope.val2++;
+
+  };
+
+  $scope.decrement1=function(){
+    if($scope.val1 > 0){
+      $scope.val1--;
+    }
+
+
+  };
+
+  $scope.decrement2=function(){
+    if($scope.val2 > 0){
+      $scope.val2--;
+    }
+  };
 });
